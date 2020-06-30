@@ -55,6 +55,6 @@ app.use((req, res, next) => {
 /**
  * Start Express server.
  */
-server.listen(config.NODE_SERVER_PORT.port, () => {
-  console.log('app listening on port:' + config.NODE_SERVER_PORT.port);
+server.listen(process.env.PORT, () => {
+  console.log('app listening on port:' + process.env.PORT);
 });
